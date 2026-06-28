@@ -20,7 +20,7 @@
 
 <p align="center"><sub>概览视频：VLX-Go 面向具身导航的视觉-语言短时航点预测。</sub></p>
 
-https://github.com/user-attachments/assets/112a5a86-847b-4968-8469-c022bb20f75d
+https://github.com/user-attachments/assets/c00f1d8b-36c4-4fa6-805f-2775d206ad41
 
 ## 项目概览
 
