@@ -11,11 +11,11 @@
 </p>
 
 <p align="center">
-  <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/X-Follow%20%40OmAI%20lab-111111?style=for-the-badge&logo=x&logoColor=white&labelColor=5b5b5b" alt="Follow @OmAI lab on X"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/Blog-Read%20Article-2563eb?style=for-the-badge&logo=googledocs&logoColor=white&labelColor=5b5b5b" alt="Blog article"></a>
-  <a href="#model-checkpoint"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827?style=for-the-badge&logo=rocket&logoColor=white&labelColor=5b5b5b" alt="Model coming soon"></a>
-  <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827?style=for-the-badge&logo=databricks&logoColor=white&labelColor=5b5b5b" alt="Dataset coming soon"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/Hugging%20Face-Read%20Blog-f0c541?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=5b5b5b" alt="Hugging Face blog"></a>
+  <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/%F0%9F%93%A3%20X-Follow%20%40OmAI_lab-000000" alt="Follow @OmAI lab on X"></a>
+  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20Blog-Read%20Article-2563eb" alt="Blog article"></a>
+  <a href="#model-checkpoint"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="Model coming soon"></a>
+  <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="Dataset coming soon"></a>
+  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Read%20Blog-f9d54a" alt="Hugging Face blog"></a>
 </p>
 
 <p align="center"><sub>Overview video: VLX-Go for vision-language short-horizon waypoint prediction in embodied navigation.</sub></p>
