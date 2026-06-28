@@ -12,10 +12,10 @@
 
 <p align="center">
   <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/%F0%9F%93%A3%20X-%E5%85%B3%E6%B3%A8%20%40OmAI_lab-000000" alt="关注 @OmAI lab"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20%E5%8D%9A%E5%AE%A2-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-2563eb" alt="Blog 文章"></a>
+  <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_zh.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20%E5%8D%9A%E5%AE%A2-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-2563eb" alt="Blog 文章"></a>
   <a href="#模型文件"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="模型即将发布"></a>
   <a href="#数据集"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="数据集即将发布"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-f9d54a" alt="Hugging Face Blog"></a>
+  <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-f9d54a" alt="Hugging Face Blog"></a>
 </p>
 
 <p align="center"><sub>概览视频：VLX-Go 面向具身导航的视觉-语言短时航点预测。</sub></p>

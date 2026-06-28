@@ -12,10 +12,10 @@
 
 <p align="center">
   <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/%F0%9F%93%A3%20X-Follow%20%40OmAI_lab-000000" alt="Follow @OmAI lab on X"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20Blog-Read%20Article-2563eb" alt="Blog article"></a>
+  <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_en.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20Blog-Read%20Article-2563eb" alt="Blog article"></a>
   <a href="#model-checkpoint"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="Model coming soon"></a>
   <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="Dataset coming soon"></a>
-  <a href="TBD"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Read%20Blog-f9d54a" alt="Hugging Face blog"></a>
+  <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Read%20Blog-f9d54a" alt="Hugging Face blog"></a>
 </p>
 
 <p align="center"><sub>Overview video: VLX-Go for vision-language short-horizon waypoint prediction in embodied navigation.</sub></p>
