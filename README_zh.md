@@ -119,5 +119,5 @@ VLX-Go 在 EVT-Bench 的 STT 任务上进行评估。
 关注 Om AI Lab 的 [X](https://x.com/OmAI_lab)，或扫描下方微信群二维码获取 VLX 更新并参与讨论。
 
 <p align="left">
-  <img src="assets/figures/wechat_qr.png" alt="微信群二维码" width="200">
+  <img src="assets/figures/wechat_qr_code.png" alt="微信群二维码" width="200">
 </p>
