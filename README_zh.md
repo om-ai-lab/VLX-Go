@@ -12,6 +12,13 @@
 
 <p align="center">
   <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/%F0%9F%93%A3%20X-%E5%85%B3%E6%B3%A8%20%40OmAI_lab-000000" alt="关注 @OmAI lab"></a>
+    <a href="https://www.youtube.com/@OmAILab_global">
+    <img alt="YouTube" src="https://img.shields.io/badge/%F0%9F%93%A3%20YouTube-%E8%AE%A2%E9%98%85%40OmAI%20lab-FF0000">
+  </a>
+  <a href="https://discord.gg/TWZrj32x">
+    <img alt="Discord" src="https://img.shields.io/badge/%F0%9F%93%A3%20Discord-%E5%8A%A0%E5%85%A5%40OmAI%20lab-5865F2">
+  </a>
+  <br>
   <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_zh.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20%E5%8D%9A%E5%AE%A2-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-2563eb" alt="Blog 文章"></a>
   <a href="#模型文件"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="模型即将发布"></a>
   <a href="#数据集"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="数据集即将发布"></a>
@@ -21,6 +28,8 @@
 <p align="center"><sub>概览视频：VLX-Go 面向具身导航的视觉-语言短时航点预测。</sub></p>
 
 https://github.com/user-attachments/assets/c00f1d8b-36c4-4fa6-805f-2775d206ad41
+
+<p align="center">📺 高清版本：<a href="https://www.youtube.com/watch?v=KLcytL4gogA">Watch on YouTube</a></p>
 
 ## 项目概览
 
@@ -33,6 +42,37 @@ VLX-Go 是一个面向具身导航的轻量化视觉-语言航点规划模型。
 与依赖通用 VLM 描述场景或生成文本形式动作不同，VLX-Go 将视觉-语言状态直接映射到紧凑的航点接口。本仓库聚焦目标跟随、局部导航、动态避障和闭环评测。
 
 VLX-Go 基于 [OmTrackVLA](https://github.com/om-ai-lab/OmTrackVLA) 的技术路线，并进一步延展到轻量化航点预测与闭环导航研究。
+
+> [!TIP]
+>
+> **🚀 立即体验[VLX](https://om-agent.com/)**，探索它如何使机器能够实时感知、推理和行动。
+
+## 社区
+
+加入 VLX 社区，与开发者交流、探索应用、分享反馈，并共同塑造多模态 AI 的未来。
+
+<table align="center">
+  <thead>
+    <tr>
+      <th><div align="center">官方微信</div></th>
+      <th><div align="center">Discord 社区</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="assets/figures/WeChat.png" alt="VLX 微信社群二维码" width="220">
+      </td>
+      <td align="center">
+        <a href="https://discord.gg/TWZrj32x">
+          <img src="assets/figures/Discord.png" alt="VLX Discord 社区二维码" width="220">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+如需技术支持、商务合作或社区咨询，请通过 **[marketing@hzlh.com](mailto:marketing@hzlh.com)** 与我们联系。
 
 ## 亮点
 
@@ -113,11 +153,3 @@ VLX-Go 在 EVT-Bench 的 STT 任务上进行评估。
 ## 数据集
 
 即将发布。
-
-## 关注我们
-
-关注 Om AI Lab 的 [X](https://x.com/OmAI_lab)，或扫描下方微信群二维码获取 VLX 更新并参与讨论。
-
-<p align="left">
-  <img src="assets/figures/wechat_qr_code.png" alt="微信群二维码" width="200">
-</p>

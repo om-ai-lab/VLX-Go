@@ -12,6 +12,13 @@
 
 <p align="center">
   <a href="https://x.com/OmAI_lab"><img src="https://img.shields.io/badge/%F0%9F%93%A3%20X-Follow%20%40OmAI_lab-000000" alt="Follow @OmAI lab on X"></a>
+  <a href="https://www.youtube.com/@OmAILab_global">
+    <img alt="YouTube" src="https://img.shields.io/badge/%F0%9F%93%A3%20YouTube-Subscribe%20%40OmAI%20lab-FF0000">
+  </a>
+  <a href="https://discord.gg/TWZrj32x">
+    <img alt="Discord" src="https://img.shields.io/badge/%F0%9F%93%A3%20Discord-Join%20%40OmAI%20lab-5865F2">
+  </a>
+  <br>
   <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_en.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20Blog-Read%20Article-2563eb" alt="Blog article"></a>
   <a href="#model-checkpoint"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="Model coming soon"></a>
   <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="Dataset coming soon"></a>
@@ -21,6 +28,8 @@
 <p align="center"><sub>Overview video: VLX-Go for vision-language short-horizon waypoint prediction in embodied navigation.</sub></p>
 
 https://github.com/user-attachments/assets/112a5a86-847b-4968-8469-c022bb20f75d
+
+<p align="center">📺 HD version: <a href="https://www.youtube.com/watch?v=KLcytL4gogA">Watch on YouTube</a></p>
 
 ## Overview
 
@@ -33,6 +42,37 @@ VLX-Go is a lightweight vision-language waypoint planner for embodied navigation
 Rather than relying on a general-purpose VLM to describe the scene or produce text-only actions, VLX-Go maps the visual-language state directly to a compact waypoint interface. This repository focuses on target following, local navigation, dynamic obstacle avoidance, and closed-loop evaluation.
 
 VLX-Go builds on the technical direction of [OmTrackVLA](https://github.com/om-ai-lab/OmTrackVLA) and extends it toward lightweight waypoint prediction and closed-loop navigation research.
+
+> [!TIP]
+>
+> **🚀 Try [VLX](https://om-agent.com/)** here and explore how it enables machine to perceive, reason, and act in real time.
+
+## Community
+
+Join the VLX community to connect with developers, explore applications, share feedback, and shape the future of multimodal AI.
+
+<table align="center">
+  <thead>
+    <tr>
+      <th><div align="center">Official WeChat</div></th>
+      <th><div align="center">Discord Community</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="assets/figures/WeChat.png" alt="VLX official WeChat QR code" width="220">
+      </td>
+      <td align="center">
+        <a href="https://discord.gg/TWZrj32x">
+          <img src="assets/figures/Discord.png" alt="VLX Discord community QR code" width="220">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+For technical support, partnerships, and community inquiries, contact us at **[marketing@hzlh.com](mailto:marketing@hzlh.com)**.
 
 ## Highlights
 
@@ -113,11 +153,3 @@ Coming soon.
 ## Dataset
 
 Coming soon.
-
-## Follow us
-
-Follow Om AI Lab on [X](https://x.com/OmAI_lab), or scan the WeChat group QR code below for VLX updates and discussion.
-
-<p align="left">
-  <img src="assets/figures/wechat_qr_code.png" alt="WeChat community QR code" width="200">
-</p>
