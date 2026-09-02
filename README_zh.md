@@ -15,7 +15,7 @@
     <a href="https://www.youtube.com/@OmAILab_global">
     <img alt="YouTube" src="https://img.shields.io/badge/%F0%9F%93%A3%20YouTube-%E8%AE%A2%E9%98%85%40OmAI%20lab-FF0000">
   </a>
-  <a href="https://discord.gg/TWZrj32x">
+  <a href="https://discord.gg/SEVNjyXPef">
     <img alt="Discord" src="https://img.shields.io/badge/%F0%9F%93%A3%20Discord-%E5%8A%A0%E5%85%A5%40OmAI%20lab-5865F2">
   </a>
   <br>
@@ -64,7 +64,7 @@ VLX-Go 基于 [OmTrackVLA](https://github.com/om-ai-lab/OmTrackVLA) 的技术路
         <img src="assets/figures/WeChat.png" alt="VLX 微信社群二维码" width="220">
       </td>
       <td align="center">
-        <a href="https://discord.gg/TWZrj32x">
+        <a href="https://discord.gg/SEVNjyXPef">
           <img src="assets/figures/Discord.png" alt="VLX Discord 社区二维码" width="220">
         </a>
       </td>

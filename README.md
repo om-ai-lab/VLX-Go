@@ -15,7 +15,7 @@
   <a href="https://www.youtube.com/@OmAILab_global">
     <img alt="YouTube" src="https://img.shields.io/badge/%F0%9F%93%A3%20YouTube-Subscribe%20%40OmAI%20lab-FF0000">
   </a>
-  <a href="https://discord.gg/TWZrj32x">
+  <a href="https://discord.gg/SEVNjyXPef">
     <img alt="Discord" src="https://img.shields.io/badge/%F0%9F%93%A3%20Discord-Join%20%40OmAI%20lab-5865F2">
   </a>
   <br>
@@ -64,7 +64,7 @@ Join the VLX community to connect with developers, explore applications, share f
         <img src="assets/figures/WeChat.png" alt="VLX official WeChat QR code" width="220">
       </td>
       <td align="center">
-        <a href="https://discord.gg/TWZrj32x">
+        <a href="https://discord.gg/SEVNjyXPef">
           <img src="assets/figures/Discord.png" alt="VLX Discord community QR code" width="220">
         </a>
       </td>
