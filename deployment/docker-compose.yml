@@ -1,0 +1,63 @@
+services:
+  vlxgo-server:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+      args:
+        BASE_IMAGE: "${BASE_IMAGE:-nvcr.io/nvidia/pytorch:25.06-py3}"
+    image: vlxgo-infer-server:latest
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 30s
+    shm_size: "${SHM_SIZE:-1gb}"
+    ports:
+      - "${PORT:-8233}:8233"
+    volumes:
+      - type: bind
+        source: "${VLXGO_MODEL_DIR:-../resources/vlxgo}"
+        target: /app/resources/vlxgo
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: "${DINOV3_MODEL_DIR:-../resources/dinov3-vits16-pretrain-lvd1689m}"
+        target: /app/resources/dinov3-vits16-pretrain-lvd1689m
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: "${SIGLIP_MODEL_DIR:-../resources/siglip-so400m-patch14-384}"
+        target: /app/resources/siglip-so400m-patch14-384
+        read_only: true
+        bind:
+          create_host_path: false
+    environment:
+      HF_MODEL_DIR: /app/resources/vlxgo
+      DINOV3_MODEL_PATH: /app/resources/dinov3-vits16-pretrain-lvd1689m
+      SIGLIP_MODEL_PATH: /app/resources/siglip-so400m-patch14-384
+      HF_LOCAL_FILES_ONLY: "1"
+      VLXGO_DEVICE: cuda:0
+      VLXGO_ATTN_IMPL: "${VLXGO_ATTN_IMPL:-sdpa}"
+      VLXGO_ATTN_STRICT: "${VLXGO_ATTN_STRICT:-0}"
+      PORT: "8233"
+      CUDA_VISIBLE_DEVICES: "0"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${GPU_ID:-0}"]
+              capabilities: [gpu]
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - |
+          import json, urllib.request
+          with urllib.request.urlopen('http://127.0.0.1:8233/engine/v1/health/ping', timeout=5) as response:
+              assert json.load(response)['is_alive']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s

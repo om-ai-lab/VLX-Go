@@ -1,0 +1,15 @@
+-r ../requirements.txt
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.26.4
+gym==0.23.0
+numpy-quaternion==2023.0.4
+numba==0.59.1
+opencv-python==4.11.0.86
+hydra-core==1.3.2
+omegaconf==2.3.0
+attrs>=19.1
+scipy==1.13.1
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
+tqdm>=4

@@ -1,0 +1,9 @@
+# @package habitat.simulator.agents.go2
+defaults:
+  - agent_base
+  - _self_
+
+radius: 0.3
+height: 0.5
+articulated_agent_type: "Go2Robot"
+articulated_agent_urdf: data/robots/unitree_go2/urdf/go2_description.urdf

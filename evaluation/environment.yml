@@ -1,0 +1,9 @@
+name: vlxgo-eval
+channels:
+  - conda-forge
+  - aihabitat
+dependencies:
+  - python=3.9
+  - pip
+  - habitat-sim=0.3.1
+  - withbullet

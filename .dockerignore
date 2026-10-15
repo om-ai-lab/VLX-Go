@@ -1,0 +1,10 @@
+*
+!requirements.txt
+!vlxgo/
+!vlxgo/*.py
+!deployment/
+!deployment/*.py
+!deployment/requirements.txt
+!deployment/run_engine_server.sh
+!deployment/Dockerfile
+**/__pycache__/

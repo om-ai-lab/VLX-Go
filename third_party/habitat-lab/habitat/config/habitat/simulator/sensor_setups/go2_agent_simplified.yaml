@@ -1,0 +1,40 @@
+# @package habitat.simulator.agents.go2_agent
+defaults:
+  - /habitat/simulator/sim_sensors@sim_sensors.jaw_rgb_sensor: jaw_rgb_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.right_rgb_sensor: right_rgb_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.back_rgb_sensor: back_rgb_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.left_rgb_sensor: left_rgb_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.jaw_depth_sensor: jaw_depth_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.jaw_panoptic_sensor: jaw_panoptic_sensor
+  - /habitat/simulator/sim_sensors@sim_sensors.third_rgb_sensor: third_rgb_sensor
+
+sim_sensors:
+  jaw_rgb_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+  right_rgb_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+  back_rgb_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+  left_rgb_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+  jaw_depth_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+    min_depth: 0.0
+    max_depth: 10.0
+  jaw_panoptic_sensor:
+    height: 480
+    width: 640
+    hfov: 90
+  third_rgb_sensor:
+    height: 480
+    width: 640

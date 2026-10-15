@@ -1,0 +1,24 @@
+{
+  "trackvla_revision": "c69f9d98a73c8c9d16c7cf49351354c32d8bc0cd",
+  "source": "https://github.com/wsakobe/TrackVLA",
+  "annotations": {
+    "data/datasets/track/STT/val/val.json.gz": {
+      "sha256": "8a96fe3be38ab78b0b8985e71645eef337d396be126bbd78ce1c87ffef5a0c63"
+    },
+    "data/datasets/track/DT/val/val.json.gz": {
+      "sha256": "1997a14b2a03fb1319c924a3d38fe5824f1b627130d77b7e3d137633f6b63398"
+    },
+    "data/datasets/track/AT/val/val.json.gz": {
+      "sha256": "ed4aee0d49c2bd4b0f75e9922c53bd41d7aa50da2aa35fd5f994205c4537b093"
+    }
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "reference_steps": {
+    "path": "evaluation/assets/track_episode_steps.json",
+    "sha256": "77debaa3b64fd977532df220fb355a1045082a4e563fcaf53ce404cff36018e0"
+  },
+  "humanoid_metadata": {
+    "path": "third_party/habitat-lab/habitat/tasks/track/humanoid_infos.json",
+    "sha256": "4d230a3f39b80dae0641e7179660f045a49e06de065838dad3f51c50d8c18659"
+  }
+}

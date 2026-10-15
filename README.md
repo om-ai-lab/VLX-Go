@@ -7,7 +7,7 @@
 <h3 align="center">Vision-Language Short-Horizon Waypoint Prediction for Embodied Navigation</h3>
 
 <p align="center">
-  English | <a href="README_zh.md">中文</a>
+  English | <a href="README_zh.md">Chinese</a>
 </p>
 
 <p align="center">
@@ -20,7 +20,12 @@
   </a>
   <br>
   <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_en.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20Blog-Read%20Article-2563eb" alt="Blog article"></a>
-  <a href="#model-checkpoint"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="Model coming soon"></a>
+  <a href="https://arxiv.org/abs/2610.19361">
+    <img 
+        src="https://img.shields.io/badge/VLX_Go-Paper-blue?logo=arxiv" 
+    />
+  </a>
+  <a href="https://huggingface.co/omlab/VLX-Go-1.0"><img src="https://img.shields.io/badge/Model-Hugging%20Face-f9d54a" alt="Hugging Face model"></a>
   <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="Dataset coming soon"></a>
   <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Read%20Blog-f9d54a" alt="Hugging Face blog"></a>
 </p>
@@ -146,9 +151,46 @@ VLX-Go is evaluated on the STT task of EVT-Bench.
 
 **Metrics:** SR is success rate, TR is tracking rate, and CR is collision rate. At the 0.6B scale, VLX-Go achieves strong success and tracking rates. Further reducing collision rate remains an important direction, especially through simulator, reward, controller, and safety-constraint tuning.
 
+### Run the evaluation
+
+The repository includes the STT, DT and AT evaluation code and validation annotations. Details in [complete evaluation guide](evaluation/README.md).
+
 ## Model Checkpoint
 
-Coming soon.
+```bash
+hf download omlab/VLX-Go-1.0 --local-dir resources/vlxgo
+```
+
+Download the complete snapshot, including weights, configuration, tokenizer and custom Python modules. The loader uses `trust_remote_code=True`. The snapshot contains the language backbone and waypoint planner. Existing complete local `vlxgo` exports are supported.
+
+Download the two vision encoders separately from their official Hugging Face repositories:
+
+| Vision encoder | Official download |
+| --- | --- |
+| DINOv3 ViT-S/16 | [facebook/dinov3-vits16-pretrain-lvd1689m](https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m) |
+| SigLIP SO400M | [google/siglip-so400m-patch14-384](https://huggingface.co/google/siglip-so400m-patch14-384) |
+
+DINOv3 requires requesting access on its model page. Once approved, run `hf auth login` before downloading. SigLIP is publicly accessible.
+
+```bash
+hf download facebook/dinov3-vits16-pretrain-lvd1689m \
+  --local-dir resources/dinov3-vits16-pretrain-lvd1689m
+hf download google/siglip-so400m-patch14-384 \
+  --local-dir resources/siglip-so400m-patch14-384
+```
+
+Keep each encoder's weights, configuration and processor files together. See [model preparation](deployment/README.md#2-prepare-model-assets) for the directory layout.
+
+## Deployment
+
+Install the server dependencies and start the HTTP waypoint service from the repository root:
+
+```bash
+python -m pip install -r deployment/requirements.txt
+bash deployment/run_engine_server.sh
+```
+
+With the three models prepared under `resources/`, the service listens on port 8233. It accepts RGB observations and a language instruction, maintains history per session, and returns waypoints and velocity commands. See the [deployment guide](deployment/README.md) for model paths, API examples, session management and Docker deployment.
 
 ## Dataset
 

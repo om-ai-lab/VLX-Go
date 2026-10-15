@@ -20,7 +20,12 @@
   </a>
   <br>
   <a href="https://om-ai-lab.github.io/2026_06_28_vlx_go_zh.html"><img src="https://img.shields.io/badge/%F0%9F%93%9D%20%E5%8D%9A%E5%AE%A2-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-2563eb" alt="Blog 文章"></a>
-  <a href="#模型文件"><img src="https://img.shields.io/badge/Model-Coming%20Soon-111827" alt="模型即将发布"></a>
+  <a href="https://arxiv.org/abs/2610.19361">
+    <img 
+        src="https://img.shields.io/badge/VLX_Go-Paper-blue?logo=arxiv" 
+    />
+  </a> 
+  <a href="https://huggingface.co/omlab/VLX-Go-1.0"><img src="https://img.shields.io/badge/Model-Hugging%20Face-f9d54a" alt="Hugging Face 模型"></a>
   <a href="#数据集"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="数据集即将发布"></a>
   <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-f9d54a" alt="Hugging Face Blog"></a>
 </p>
@@ -146,9 +151,46 @@ VLX-Go 在 EVT-Bench 的 STT 任务上进行评估。
 
 **指标说明**：SR 表示任务成功率，TR 表示目标跟踪率，CR 表示碰撞率。VLX-Go 在 0.6B 参数规模下取得了较强的成功率和跟踪率。进一步降低碰撞率仍是重要方向，尤其需要结合仿真环境、奖励设计、控制器和安全约束共同优化。
 
+### 运行评测
+
+仓库已提供 STT、DT、AT 评测代码与验证集标注。详见[完整评测指南](evaluation/README_zh.md)。
+
 ## 模型文件
 
-即将发布。
+```bash
+hf download omlab/VLX-Go-1.0 --local-dir resources/vlxgo
+```
+
+请下载完整 snapshot，包括权重、配置、tokenizer 和自定义 Python 模块，加载使用 `trust_remote_code=True`。snapshot 已包含语言 backbone 与 waypoint planner。也支持已有的完整本地 `vlxgo` 导出。
+
+两个视觉编码器需从各自的官方 Hugging Face 仓库单独下载：
+
+| 视觉编码器 | 官方下载地址 |
+| --- | --- |
+| DINOv3 ViT-S/16 | [facebook/dinov3-vits16-pretrain-lvd1689m](https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m) |
+| SigLIP SO400M | [google/siglip-so400m-patch14-384](https://huggingface.co/google/siglip-so400m-patch14-384) |
+
+DINOv3 需先在模型页面申请访问，获批后执行 `hf auth login` 登录再下载；SigLIP 可公开下载。
+
+```bash
+hf download facebook/dinov3-vits16-pretrain-lvd1689m \
+  --local-dir resources/dinov3-vits16-pretrain-lvd1689m
+hf download google/siglip-so400m-patch14-384 \
+  --local-dir resources/siglip-so400m-patch14-384
+```
+
+请完整保留各编码器的权重、配置与 processor 文件，目录结构见[模型准备说明](deployment/README_zh.md#2-准备模型)。
+
+## 实机推理部署
+
+从仓库根目录安装服务依赖并启动 HTTP waypoint 服务：
+
+```bash
+python -m pip install -r deployment/requirements.txt
+bash deployment/run_engine_server.sh
+```
+
+将三个模型准备到 `resources/` 后，服务默认监听 8233 端口，接收 RGB 观察和语言指令，按 session 维护历史，并返回 waypoint 与速度动作。[部署指南](deployment/README_zh.md)包含模型路径配置、API 示例、会话管理和 Docker 部署。
 
 ## 数据集
 
