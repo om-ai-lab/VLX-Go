@@ -26,7 +26,6 @@
     />
   </a>
   <a href="https://huggingface.co/omlab/VLX-Go-1.0"><img src="https://img.shields.io/badge/Model-Hugging%20Face-f9d54a" alt="Hugging Face model"></a>
-  <a href="#dataset"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="Dataset coming soon"></a>
   <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Read%20Blog-f9d54a" alt="Hugging Face blog"></a>
 </p>
 
@@ -191,10 +190,6 @@ bash deployment/run_engine_server.sh
 ```
 
 With the three models prepared under `resources/`, the service listens on port 8233. It accepts RGB observations and a language instruction, maintains history per session, and returns waypoints and velocity commands. See the [deployment guide](deployment/README.md) for model paths, API examples, session management and Docker deployment.
-
-## Dataset
-
-Coming soon.
 
 ## Citation
 If you find VLX-Go useful in your research or applications, please cite it using the following BibTeX:

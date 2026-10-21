@@ -26,7 +26,6 @@
     />
   </a> 
   <a href="https://huggingface.co/omlab/VLX-Go-1.0"><img src="https://img.shields.io/badge/Model-Hugging%20Face-f9d54a" alt="Hugging Face 模型"></a>
-  <a href="#数据集"><img src="https://img.shields.io/badge/Dataset-Coming%20Soon-111827" alt="数据集即将发布"></a>
   <a href="https://huggingface.co/blog/omlab/vlx-go"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%E9%98%85%E8%AF%BB%E6%96%87%E7%AB%A0-f9d54a" alt="Hugging Face Blog"></a>
 </p>
 
@@ -191,10 +190,6 @@ bash deployment/run_engine_server.sh
 ```
 
 将三个模型准备到 `resources/` 后，服务默认监听 8233 端口，接收 RGB 观察和语言指令，按 session 维护历史，并返回 waypoint 与速度动作。[部署指南](deployment/README_zh.md)包含模型路径配置、API 示例、会话管理和 Docker 部署。
-
-## 数据集
-
-即将发布。
 
 ## 引用
 如果您发现VLX-Go在您的研究或应用中有所帮助，请使用以下BibTeX引用它:
