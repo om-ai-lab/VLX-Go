@@ -195,3 +195,17 @@ bash deployment/run_engine_server.sh
 ## 数据集
 
 即将发布。
+
+## 引用
+如果您发现VLX-Go在您的研究或应用中有所帮助，请使用以下BibTeX引用它:
+```bibtex
+@misc{lee2026vlxgorobustembodiedtracking,
+      title={VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement}, 
+      author={Kyusong Lee and Heting Ying and Tiancheng Zhao},
+      year={2026},
+      eprint={2610.19361},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.19361}, 
+}
+```
