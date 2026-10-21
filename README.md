@@ -195,3 +195,17 @@ With the three models prepared under `resources/`, the service listens on port 8
 ## Dataset
 
 Coming soon.
+
+## Citation
+If you find VLX-Go useful in your research or applications, please cite it using the following BibTeX:
+```bibtex
+@misc{lee2026vlxgorobustembodiedtracking,
+      title={VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement}, 
+      author={Kyusong Lee and Heting Ying and Tiancheng Zhao},
+      year={2026},
+      eprint={2610.19361},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.19361}, 
+}
+```
