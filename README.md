@@ -172,8 +172,8 @@ Download the two vision encoders separately from their official Hugging Face rep
 DINOv3 requires requesting access on its model page. Once approved, run `hf auth login` before downloading. SigLIP is publicly accessible.
 
 ```bash
-hf download facebook/dinov3-vits16-pretrain-lvd1689m \
-  --local-dir resources/dinov3-vits16-pretrain-lvd1689m
+modelscope download --model facebook/dinov3-vits16-pretrain-lvd1689m \
+  --local_dir resources/dinov3-vits16-pretrain-lvd1689m
 hf download google/siglip-so400m-patch14-384 \
   --local-dir resources/siglip-so400m-patch14-384
 ```

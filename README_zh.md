@@ -172,8 +172,8 @@ hf download omlab/VLX-Go-1.0 --local-dir resources/vlxgo
 DINOv3 需先在模型页面申请访问，获批后执行 `hf auth login` 登录再下载；SigLIP 可公开下载。
 
 ```bash
-hf download facebook/dinov3-vits16-pretrain-lvd1689m \
-  --local-dir resources/dinov3-vits16-pretrain-lvd1689m
+modelscope download --model facebook/dinov3-vits16-pretrain-lvd1689m \
+  --local_dir resources/dinov3-vits16-pretrain-lvd1689m
 hf download google/siglip-so400m-patch14-384 \
   --local-dir resources/siglip-so400m-patch14-384
 ```

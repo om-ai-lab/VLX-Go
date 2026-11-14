@@ -24,8 +24,8 @@ Official vision encoder downloads:
 
 ```bash
 hf download omlab/VLX-Go-1.0 --local-dir resources/vlxgo
-hf download facebook/dinov3-vits16-pretrain-lvd1689m \
-  --local-dir resources/dinov3-vits16-pretrain-lvd1689m
+modelscope download --model facebook/dinov3-vits16-pretrain-lvd1689m \
+  --local_dir resources/dinov3-vits16-pretrain-lvd1689m
 hf download google/siglip-so400m-patch14-384 \
   --local-dir resources/siglip-so400m-patch14-384
 ```
